@@ -132,15 +132,3 @@ def merge_yolov8_datasets(
     print(f"📊 Répartition: {len(train)} train, {len(val)} val, {len(test)} test")
     print(f"🏷️ Classes détectées: {len(classes)}")
 
-# Exemple d'utilisation
-merge_yolov8_datasets(
-    source_dirs=[
-        '/chemin/dataset1',
-        '/chemin/dataset2', 
-        '/chemin/dataset3'
-    ],
-    output_dir='/chemin/dataset_final',
-    train_ratio=0.7,
-    val_ratio=0.2,
-    test_ratio=0.1
-)
