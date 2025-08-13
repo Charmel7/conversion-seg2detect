@@ -3,6 +3,7 @@ import shutil
 import hashlib
 from sklearn.model_selection import train_test_split
 
+
 def merge_yolov8_datasets(
     source_dirs: list,
     output_dir: str,
@@ -25,7 +26,8 @@ def merge_yolov8_datasets(
     """
     # Vérification des ratios
     assert abs((train_ratio + val_ratio + test_ratio) - 1.0) < 0.001, "Les ratios doivent sommer à 1"
-    
+    #pas vraiment important mais cool quand meme
+
     # Création de la structure YOLOv8
     splits = ['train', 'val', 'test']
     for split in splits:
